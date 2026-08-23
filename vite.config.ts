@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: 'react-template'
+  base: process.env.VITE_BASE_PATH || '/',
 })
