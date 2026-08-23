@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center gap-6 m-10 p-10 text-white border">
-      <div className="mb-6 text-4xl font-bold">Basic React App</div>
+      <div className="mb-6 text-4xl font-bold text-pink-300">Basic React App</div>
       <TextInput text={text} setText={setText}/>
       <Button onClick={() => setSubmittedText(text)}/>
       <OutputMessage text={submittedText}/>
