@@ -5,6 +5,7 @@ type TextInputProps = {
 
 function TextInput({ text, setText }: TextInputProps) {
     const input = <input 
+        className="border p-1 px-2"
         type="text" 
         value={text} 
         onChange={(event) => setText(event.target.value)} 

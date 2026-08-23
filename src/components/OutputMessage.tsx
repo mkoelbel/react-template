@@ -4,7 +4,9 @@ type OutputMessageProps = {
 
 function OutputMessage({ text }: OutputMessageProps) {
     const message = (text === "") ? "(no message yet)" : `You entered: ${text}`;
-    const messageHtml = <p>{message}</p>;
+    const messageHtml = <div
+        className="text-sky-300/75"
+    >{message}</div>;
     return messageHtml;
 }
 
